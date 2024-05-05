@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@types/lodash": "^4.17.1",
+    "eslint": "^9.2.0",
+    "graphql": "^16.8.1",
+    "lodash": "^4.17.21",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@types/uuid": "^9.0.8",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.1.0",
+    "typescript-eslint": "^7.8.0"
+  },
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/src/index.js"
+  }
+}
