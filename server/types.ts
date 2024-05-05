@@ -12,3 +12,10 @@ export type WorkOrder = {
   dueDate: Date;
   priority: Priority;
 };
+
+export type CreateWorkOrderType = {
+  title: string;
+  description: string | null;
+  dueDate: string;
+  priority: Priority;
+};

@@ -17,14 +17,14 @@ export const getAll = async (query: string) => {
   return await dbEachPromisify(query);
 };
 
-export const insertData = async (
-  query: string,
-  params: Record<string, any>[]
-) => {
+export const insertData = async (query: string, params: any[]) => {
   if (!_db) await createDbConnection();
   const run = util.promisify(_db.run).bind(_db);
+  const get = util.promisify(_db.get).bind(_db);
 
   await run(query, params);
+  const { id } = await get("SELECT last_insert_rowid() as id");
+  return id;
 };
 
 const _createDbConnection = async () => {

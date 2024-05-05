@@ -29,12 +29,12 @@ const Header = styled.div`
   background-color: #161616;
   padding: 10px;
   border-radius: 10px 10px 0 0;
-  max-height: 600px;
-  overflow: auto;
 `;
 const Body = styled.div`
   background-color: #484848;
   border-radius: 0 0 10px 10px;
+  overflow: auto;
+  max-height: 600px;
 `;
 const Col = styled.div`
   flex: 1;

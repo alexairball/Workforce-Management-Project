@@ -1,3 +1,35 @@
-To setup simply
-yarn
-yarn start
+# Workforce
+
+### How to use
+
+- Make sure to have [Node.js 20](https://nodejs.org/en/download) installed.
+- Run `yarn`.
+- Run `yarn start` (this will start the server).
+- Navigate to the client directory: `cd client/`.
+- Run `yarn`.
+- Run `yarn dev` (this will start the client).
+
+### To do next
+
+##### Server side
+
+- Add unit testing.
+- Add integration testing.
+- Currently, we are using SQLite, but for scalability, consider switching to PostgreSQL.
+- Currently, we do not have any configuration routes.
+  - Configuration should include object type, visibility settings, etc.
+- Additionally, consider adding a login page with session management and access rights to restrict unauthorized access.
+
+##### Client side
+
+- Integrate unit testing.
+- Improve flow between each page, if necessary.
+- Enhance color schemes and frontend design.
+- Implement more robust field validation using the Yup library.
+- Add quick filtering, sorting, and searching for columns.
+- Expand actions for orders:
+  - Read-only page/modal with detailed information.
+  - Update page/modal.
+  - Options for closing, canceling, or finishing work orders.
+- Add support for translations into other languages.
+- Utilize configurations from the server to build fields dynamically instead of hardcoding them.
